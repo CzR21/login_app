@@ -1,0 +1,13 @@
+<div class="container main">
+    <div class="container card login" *ngFor="let user of  listUsers" >
+        <div class="d-flex align-items-end">
+            <div class="card-body">
+                <h5>{{user.nome}}</h5>
+                <span><b>Email:</b> {{user.email}}</span>
+                <span><b>Celular:</b> {{user.celular}}</span>
+            </div>
+            <img class="mb-3" style="cursor: pointer;" (click)="deleteUser(user.id)" src="assets\images\excluir.png" alt="Delete" width="30px" height="30px">
+        </div>
+    </div>
+  </div>
+  
